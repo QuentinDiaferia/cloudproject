@@ -69,12 +69,12 @@ $user = Auth::user();
 
                                     @foreach($groups as $group)
                                         <li>
-                                            <a href="/cloudcomputing/public/group/{{ $group->id }}">{{ $group->name }}</a>
+                                            <a href="{{ url('group/'.$group->id) }}">{{ $group->name }}</a>
                                         </li>
                                     @endforeach
 
                                     <li>
-                                        <a href="/cloudcomputing/public/creategroup">New group</a>
+                                        <a href="{{ url('creategroup') }}">New group</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
