@@ -93,6 +93,7 @@ $user = Auth::user();
         <!-- Page Content -->
         <div id="page-wrapper">
             <div class="container-fluid">
+                {{ url('css/dropzone.css') }}
                 @yield('content')
             </div>
             <!-- /.container-fluid -->
