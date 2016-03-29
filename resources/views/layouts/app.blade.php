@@ -44,7 +44,7 @@ $user = Auth::user();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/cloudcomputing/public/dashboard">App Name</a>
+                <a class="navbar-brand" href="{{ url('dashboard') }}">App Name</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -53,7 +53,7 @@ $user = Auth::user();
                     <ul class="nav" id="side-menu">
                         @if(Auth::check())
                              <li>
-                                <a href="/cloudcomputing/public/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                                <a href="{{ url('dashboard') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> My groups<span class="fa arrow"></span></a>
@@ -106,20 +106,20 @@ $user = Auth::user();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
         <!-- jQuery -->
-    <script src="/cloudcomputing/public/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="{{ url('bower_components/jquery/dist/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/cloudcomputing/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{ url('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="/cloudcomputing/public/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="{{ url('bower_components/metisMenu/dist/metisMenu.min.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/cloudcomputing/public/dist/js/sb-admin-2.js"></script>
+    <script src="{{ url('dist/js/sb-admin-2.js') }}"></script>
 
     <!-- DataTables JavaScript -->
-    <script src="/cloudcomputing/public/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="/cloudcomputing/public/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+    <script src="{{ url('bower_components/datatables/media/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ url('bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js') }}"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>
