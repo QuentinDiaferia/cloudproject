@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/cloudcomputing/public/">App Name</a>
+                <a class="navbar-brand" href="{{ url('/') }}">App Name</a>
             </div>
             <!-- /.navbar-header -->
         </nav>
