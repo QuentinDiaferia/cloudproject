@@ -30,19 +30,9 @@
     </div>
 
     <div class="form-group">
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" name="remember"> Remember Me
-            </label>
-        </div>
-    </div>
-
-    <div class="form-group">
         <button type="submit" class="btn btn-lg btn-primary btn-block">
             <i class="fa fa-btn fa-sign-in"></i> Login
         </button>
-
-        <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
     </div>
 </form>
 @endsection
