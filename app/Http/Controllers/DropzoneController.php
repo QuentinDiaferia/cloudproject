@@ -29,7 +29,7 @@ class DropzoneController extends Controller
 
     	$dlFile = Storage::get($nameGroup.$n.'/'.$file);
  
-		return response()->download(storage_path(getMetaData($nameGroup.$n.'/'.$file), $file, ['Content-Type' => Storage::mimeType($nameGroup.$n.'/'.$file)]));;
+		return response()->download(storage_path($nameGroup.$n.'/'.$file), $file, ['Content-Type' => Storage::mimeType($nameGroup.$n.'/'.$file)]);
 
     }
 
