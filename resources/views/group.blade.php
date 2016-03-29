@@ -126,7 +126,7 @@ $group = DB::table('groups')->where('id', $id)->orderBy('name')->first();
     </div>
     <!-- /.row -->
     <!-- Dropzone JavaScript -->
-    <script src="/cloudcomputing/public/js/dropzone.js"></script>
+    <script src="{{ url('js/dropzone.js') }}"></script>
     <script>
     Dropzone.options.dropzone = {
         previewTemplate: '<div id="ajax-loader"><img src="/cloudcomputing/public/img/ajax-loader.gif" /></div>',
