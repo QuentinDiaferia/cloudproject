@@ -129,7 +129,7 @@ $group = DB::table('groups')->where('id', $id)->orderBy('name')->first();
     <script src="{{ url('js/dropzone.js') }}"></script>
     <script>
     Dropzone.options.dropzone = {
-        previewTemplate: '<div id="ajax-loader"><img src="{{ url(\'img/ajax-loader.gif\') }}" /></div>',
+        previewTemplate: '<div id="ajax-loader"><img src="{{ url("img/ajax-loader.gif") }}" /></div>',
         init: function() {
             this.on("success", function(file) {
                 this.element.classList.remove("dz-started");
