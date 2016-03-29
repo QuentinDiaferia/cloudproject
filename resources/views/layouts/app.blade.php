@@ -12,19 +12,19 @@ $user = Auth::user();
     <meta name="author" content="">
     <title>@yield('title')</title>
     <!-- Bootstrap Core CSS -->
-    <link href="/cloudcomputing/public/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- MetisMenu CSS -->
-    <link href="/cloudcomputing/public/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <link href="{{ url('bower_components/metisMenu/dist/metisMenu.min.css') }}" rel="stylesheet">
     <!-- DataTables CSS -->
-    <link href="/cloudcomputing/public/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="{{ url('bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css') }}" rel="stylesheet">
     <!-- DataTables Responsive CSS -->
-    <link href="/cloudcomputing/public/bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+    <link href="{{ url('bower_components/datatables-responsive/css/dataTables.responsive.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="/cloudcomputing/public/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="{{ url('dist/css/sb-admin-2.css') }}" rel="stylesheet">
     <!-- Dropzone CSS -->
-    <link href="/cloudcomputing/public/css/dropzone.css" rel="stylesheet">
+    <link href="{{ url('css/dropzone.css') }}" rel="stylesheet">
     <!-- Custom Fonts -->
-    <link href="/cloudcomputing/public/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ url('bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -93,7 +93,6 @@ $user = Auth::user();
         <!-- Page Content -->
         <div id="page-wrapper">
             <div class="container-fluid">
-                {{ url('css/dropzone.css') }}
                 @yield('content')
             </div>
             <!-- /.container-fluid -->
